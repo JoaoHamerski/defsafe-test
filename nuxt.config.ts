@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-lodash",
     "@nuxt/test-utils/module",
+    "nuxt-icon",
   ],
   googleFonts: {
     families: {
