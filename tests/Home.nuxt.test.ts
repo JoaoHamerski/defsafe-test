@@ -4,8 +4,6 @@ import { expect } from "vitest";
 import { describe } from "vitest";
 import { test } from "vitest";
 import { consola } from "consola";
-import { mountSuspended } from "@nuxt/test-utils/runtime";
-import CatFact from "~/components/Home/CatFact.vue";
 
 describe("home page", async () => {
   beforeEach(() => {
