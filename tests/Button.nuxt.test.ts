@@ -2,6 +2,7 @@ import { test, expect } from "vitest";
 import { mountSuspended } from "@nuxt/test-utils/runtime";
 
 import Button from "../components/App/Button.vue";
+import { shallowMount } from "@vue/test-utils";
 
 test("is defined", async () => {
   const component = mountSuspended(Button);
@@ -27,4 +28,15 @@ test("has icon", async () => {
   });
 
   expect(component.get("svg.icon").html()).toBeDefined();
+});
+
+test("has icon prop", () => {
+  const iconProp = "icone";
+  const response = shallowMount(Button, {
+    props: {
+      icon: iconProp,
+    },
+  });
+
+  expect(response.props("icon")).toBe(iconProp);
 });

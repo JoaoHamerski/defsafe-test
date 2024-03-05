@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useFetch("/api/cat-fact", {
+useFetch("/api/cat-facts", {
   key: "cat-facts",
 });
 
